@@ -6,54 +6,49 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="app">
+    <header>
+      <div id="coins">Coins: 50</div>
+      <nav>
+        <button onclick="showMenu('shop')">Shop</button>
+        <button onclick="showMenu('collection')">Collection</button>
+        <button onclick="showMenu('settings')">Settings</button>
+      </nav>
+    </header>
 
-<div id="app">
+    <main>
+      <!-- SHOP -->
+      <section id="shop" class="menu">
+        <h2>Shop</h2>
+        <div id="shopList"></div>
+      </section>
 
-<header>
-  <div id="coins">Coins: 50</div>
-  <nav>
-    <button onclick="showMenu('shop')">Shop</button>
-    <button onclick="showMenu('collection')">Collection</button>
-    <button onclick="showMenu('settings')">Settings</button>
-  </nav>
-</header>
+      <!-- COLLECTION -->
+      <section id="collection" class="menu hidden">
+        <h2>Collection</h2>
+        <p id="selectedInfo">Selected Card: None</p>
+        <div id="seriesButtons"></div>
+        <div id="cardGrid"></div>
+      </section>
 
-<main>
+      <!-- SETTINGS -->
+      <section id="settings" class="menu hidden">
+        <h2>Settings</h2>
+        <button onclick="exportSave()">Export Save</button>
+        <input type="file" id="importFile" hidden>
+        <button onclick="triggerImport()">Import Save</button>
+        <button onclick="resetGame()">Reset Game</button>
+      </section>
 
-  <!-- SHOP -->
-  <section id="shop" class="menu">
-    <h2>Shop</h2>
-    <div id="shopList"></div>
-  </section>
-
-  <!-- COLLECTION -->
-  <section id="collection" class="menu hidden">
-    <h2>Collection</h2>
-    <p id="selectedInfo">Selected Card: None</p>
-    <div id="seriesButtons"></div>
-    <div id="cardGrid"></div>
-  </section>
-
-  <!-- SETTINGS -->
-  <section id="settings" class="menu hidden">
-    <h2>Settings</h2>
-    <button onclick="exportSave()">Export Save</button>
-    <input type="file" id="importFile" hidden>
-    <button onclick="triggerImport()">Import Save</button>
-    <button onclick="resetGame()">Reset Game</button>
-  </section>
-
-  <!-- PULL RESULTS MODAL -->
-  <div id="pullResults" class="hidden">
-    <h2>Pack Opened!</h2>
-    <div id="pullCards"></div>
-    <button onclick="closePullResults()">Close</button>
+      <!-- PULL RESULTS MODAL -->
+      <div id="pullResults" class="hidden">
+        <h2>Pack Opened!</h2>
+        <div id="pullCards"></div>
+        <button onclick="closePullResults()">Close</button>
+      </div>
+    </main>
   </div>
 
-</main>
-
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

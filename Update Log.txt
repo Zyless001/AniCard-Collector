@@ -1,58 +1,53 @@
-Update 1.0 (Release)
+Update 1.5 (Jujutsu Kaisen)
 
-+3 Animes
++1 Animes
 
-+5 Raritys
++1 Raritys
 
-+5 Packs
++3 Packs
 
-+52 Characters
++90 Characters
 
 ANIME INFO
 
-"Bleach"
-
-"Naruto"
-
-"One Piece"
+"Jujutsu Kaisen"
 
 
 PACK INFO
 
-"Agent Of The Shinigami" --- 9 Cards
+"Agent Of The Shinigami" --- 1 Cards
 
-"Land Of Waves" --- 10 Cards
+"Soul Society" --- 33 Cards
 
-"Chunnin Exams" --- 16 Cards
-
-"Romance Dawn" --- 11 Cards
-
-"Orange Town" --- 6 Cards
+"Jujutsu Kaisen - Season 1+2" --- 46 Cards
 
 
 CHARACTER INFO
 
-Bleach - (3 Commons, 4 Uncommons, and 2 Rares)
+Bleach - (8 Commons, 6 Uncommons, 6 Rares, 6 Epics, 5 Legendarys, 2 Mythics)
 
-Naruto - (6 Commons, 8 Uncommons, 7 Rares, 4 Epics, and 1 Legendary)
+One Piece - (4 Commons, 2 Uncommons, 3 Rares, 1 Epic)
 
-One Piece - (7 Commons, 5 Uncommons, 2 Rares, 1 Epics, and 2 Legendary)
+Jujutsu Kaisen - (9 Commons, 8 Uncommons, 11 Rares, 8 Epics, 7 Legendarys, 3 Mythics)
 
 
 QOL
 
-A lot... (It just came out)
+Added - New Coin Max - 20,000
+
+Added - New Card Opening UI
 
 
 BUG FIXES
 
-A lot... again
+Bug Fixed - Packs not loading right after unlock
+
+Bug Fixed - Card sizes changing when opening them
 
 
 EXTRA INFO
 
-First release of the game and i'm hyped. It took some time and a bit rushed so progression may be
-fast right now. I hope yall like it and lemme know some more anime's or characters yall
-wanna see.
+This is a update just focused on new cards and the "Mythic" rarity. Next update will have more QOL or be another big anime... not sure yet. Good luck
+on the Mythics.
 
 Have Fun and God Bless
