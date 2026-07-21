@@ -1,0 +1,74 @@
+Update 2.0 (New UI + East Blue Saga Complete)
+
++2 Packs
+
++14 Characters
+
+ANIME INFO
+
+No new ones...
+
+
+PACK INFO
+
+"Baratie" --- 7 Cards
+
+"Arlong Park" --- 7 Cards
+
+
+CHARACTER INFO
+
+One Piece - (4 Commons, 3 Uncommons, 2 Rares, 2 Epics, 2 Legendarys, and 1 Mythic)
+
+
+CARD INFO
+
+"Toji" - 'Resale Change' 250 > 750
+
+"Toji" - 'CPS' 28 > 30
+
+"Sukuna" - 'Resale Change' 500 > 850
+
+"Sukuna" - 'CPS' 32 > 35
+
+QOL (CARDS)
+
+"Rariety" - Common Chance 50% > 40%
+
+"Rariety" - Rare Chance 15% > 18%
+
+"Rariety" - Epic Chance 8% > 12%
+
+"Rariety" - Legendary Chance 1.5% > 3%
+
+"Rariety" - Mythic Chance 0.5% > 2%
+
+QOL (UI)
+
+Added - New Max Coin - 25,000
+
+Added - New Ui Buttons
+
+Added - New Card Sizes
+
+Added - New Pack Sizes
+
+Added - New Colors For UI
+
+Added - New Button Animations
+
+Added - A lot more...
+
+
+BUG FIXES
+
+No Bugs That I Know Of...
+
+
+EXTRA INFO
+
+I had the urge to work on this again and decided to focus more on UI than packs. I think it was a good idea
+and the game looks really nice now. More packs will come in the future (maybe) along with new animes, 
+rarietys, etc. Hope you enjoy the new update :)
+
+Have Fun and God Bless

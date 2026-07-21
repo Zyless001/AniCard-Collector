@@ -1,0 +1,382 @@
+h2{
+    margin-top:0;
+    font-size:30px;
+    color:#FFE27A;
+    text-shadow:0 0 8px rgba(255,226,122,.3);
+}
+
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background:
+        radial-gradient(circle at top, #2d3350 0%, #171b2d 45%, #0b0d17 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#app{
+    width:95%;
+    max-width:1200px;
+    margin:25px auto;
+    padding:20px;
+    background:#1b1f2d;
+    border:2px solid #3f4d6b;
+    border-radius:18px;
+    box-shadow:
+        0 0 30px rgba(0,0,0,.6),
+        inset 0 0 20px rgba(255,255,255,.03);
+}
+
+#coins{
+
+    background:#2f3952;
+    padding:12px 18px;
+    border-radius:10px;
+    font-size:20px;
+    font-weight:bold;
+    color:#FFD54A;
+    border:2px solid #444;
+}
+
+#seriesButtons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:20px;
+}
+
+#seriesButtons button{
+    background:#364567;
+    border:none;
+    padding:10px 20px;
+    border-radius:10px;
+    color:white;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#252c3f;
+    padding:18px;
+    border-radius:14px;
+    margin-bottom:25px;
+}
+
+button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.menu{
+    background:#23293b;
+    border-radius:14px;
+    padding:20px;
+    min-height:550px;
+    box-shadow: inset 0 0 15px rgba(0,0,0,.35);
+}
+
+.hidden {
+  display: none;
+}
+
+/* SHOP / MODAL BUTTONS */
+.shop-button{
+    background:#39496d;
+    color:white;
+    border:2px solid #4f6ea7;
+    padding:12px 24px;
+    font-size:15px;
+    font-weight:bold;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.2s;
+    box-shadow:
+        0 0 12px rgba(79,110,167,.25),
+        inset 0 0 10px rgba(255,255,255,.04);
+}
+
+.shop-button:hover{
+    background:#50638f;
+    border-color:#6fa9ff;
+    transform:translateY(-2px);
+}
+
+.shop-button:active{
+    transform:translateY(0);
+}
+
+.close-button{
+    background:#713b4a;
+    border-color:#a85b6d;
+}
+
+.close-button:hover{
+    background:#9b5067;
+    border-color:#ff7f9b;
+}
+
+/* SHOP PACK */
+.pack{
+    background:#2b344d;
+    border:4px solid #425173;
+    border-radius:15px;
+    padding:20px;
+    margin-bottom:18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    transition:.25s;
+    position:relative;
+    overflow:hidden;
+}
+
+.pack:hover{
+    transform:scale(1.02);
+    border-color:#6fa9ff;
+}
+
+.pack:has(.lock-overlay):hover{
+    transform:none;
+    border-color:#425173;
+}
+
+.pack img{
+    width:70px;
+    height:140px;
+    border-radius:10px;
+    object-fit:cover;
+    box-shadow:0 0 15px rgba(0,0,0,.4);
+}
+
+.pack button{
+    background:#47b965;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    font-weight:bold;
+    border-radius:10px;
+}
+
+.pack button:hover{
+    background:#58d577;
+}
+
+/* CARDS */
+#cardGrid {
+  display: block;
+  margin-top: 15px;
+}
+
+.card{
+    width:130px;
+    background:#29324a;
+    border-radius:12px;
+    overflow:hidden;
+    padding:8px;
+    transition:.25s;
+    position:relative;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 0 18px rgba(255,255,255,.12);
+}
+
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.card.locked {
+  filter: blur(8px);
+  pointer-events: none;
+}
+
+.selected {
+  outline: 3px solid gold;
+  box-shadow: 0 0 10px gold;
+}
+
+.sold {
+  color: gold;
+  font-size: 12px;
+}
+
+/* RARITY COLORS */
+.rarity-common { border: 2px solid #9e9e9e; }
+.rarity-uncommon { border: 2px solid #4caf50; }
+.rarity-rare { border: 2px solid #2196f3; }
+.rarity-epic { border: 2px solid #9c27b0; }
+.rarity-legendary { border: 2px solid #fbff1d; }
+.rarity-mythic {border: 2px solid red; border-radius: 10px; box-shadow: 0 0 2px red; animation: mythicCycle 3.5s linear infinite;}
+
+@keyframes mythicCycle {
+  0% { border-color: rgb(252, 57, 57); box-shadow: rgb(252, 57, 57); }
+  25% { border-color: rgb(255, 178, 36); box-shadow: rgb(255, 178, 36); }
+  50% { border-color: rgb(255, 255, 9); box-shadow: rgb(255, 255, 9); }
+  75% { border-color: rgb(24, 236, 24); box-shadow: rgb(24, 236, 24); }
+  100% { border-color: rgb(14, 139, 255); box-shadow: rgb(14, 139, 255); }
+}
+
+.series-tile img {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.pack-section{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(135px,1fr));
+    gap:18px;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #333;
+  margin: 20px 0;
+}
+
+#cardGrid h3 {
+  text-align: center;
+  margin: 20px 0 10px;
+}
+
+#cardGrid hr {
+  width: 80%;
+  margin: 25px auto;
+  border: none;
+  border-top: 2px solid #444;
+  opacity: 0.6;
+}
+
+.lock-overlay {
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.75);
+  color:rgb(170,170,170);
+  font-weight:bold;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:10px;
+  border-radius:15px;
+  z-index:5;
+}
+
+/* PULL RESULTS MODAL */
+#pullResults {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min(950px, 92vw);
+    max-height: 85vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    background: #1f2638;
+    border: 2px solid #4f6ea7;
+    border-radius: 18px;
+    box-shadow:
+        0 0 40px rgba(0,0,0,.7),
+        inset 0 0 20px rgba(255,255,255,.04);
+    z-index: 1001;
+    overflow: hidden;
+}
+
+#pullResultsOverlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    z-index:1000;
+}
+
+/* PULLED CARDS BACKGROUND GRID */
+#pullCards{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:24px;
+    margin:25px 0;
+    padding:20px;
+    overflow-y:auto;
+    flex:1;
+}
+
+/* FULL CARD SOLD OVERLAY FIX */
+#pullCards .card{
+    width:140px;
+}
+
+#pullCards .card img{
+    height:150px;
+}
+
+#pullCards .sold {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gold;
+    font-weight: bold;
+    font-size: 1.2em;
+    z-index: 2;
+    pointer-events: none;
+
+    text-shadow:
+       2px  2px 0 black,
+      -2px  2px 0 black,
+       2px -2px 0 black,
+      -2px -2px 0 black,
+       2px  0px 0 black,
+      -2px  0px 0 black,
+       0px  2px 0 black,
+       0px -2px 0 black;
+}
+
+#pullResults button{
+    margin-top:15px;
+    min-width:160px;
+}
+
+nav{
+    display:flex;
+    gap:12px;
+}
+
+nav button{
+
+    padding:12px 24px;
+
+    font-size:15px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#39496d;
+    color:white;
+
+    transition:.2s;
+}
+
+nav button:hover{
+
+    background:#50638f;
+
+    transform:translateY(-2px);
+
+    cursor:pointer;
+}
