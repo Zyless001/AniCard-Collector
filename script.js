@@ -14,6 +14,7 @@ const SERIES = [
   { name: "Naruto", displayName: "Naruto Cards" },
   { name: "One Piece", displayName: "One Piece Cards" },
   { name: "Jujutsu Kaisen", displayName: "Jujutsu Kaisen Cards" },
+  { name: "CyberPunk EdgeRunners", displayName: "CyberPunk EdgeRunners Cards" },
 ];
 
 /*CARDS*/
@@ -62,7 +63,7 @@ const CARDS = {
   kenpachi: { name: "Kenpachi", series: "Bleach", pack: "soulsociety", rarity: "Legendary", image: "./images/soulsociety/kenpachi.png", coinsPerSecond: 17, resale: 30},
   shunsui: { name: "Shunsui", series: "Bleach", pack: "soulsociety", rarity: "Legendary", image: "./images/soulsociety/shunsui.png", coinsPerSecond: 18, resale: 30},
   yamamoto: { name: "Yamamoto", series: "Bleach", pack: "soulsociety", rarity: "Mythic", image: "./images/soulsociety/yamamoto.png", coinsPerSecond: 22, resale: 45},
-  aizen: { name: "Aizen", series: "Bleach", pack: "soulsociety", rarity: "Mythic", image: "./images/soulsociety/aizen.png", coinsPerSecond: 25, resale: 50},
+  aizen: { name: "Aizen", series: "Bleach", pack: "soulsociety", rarity: "Mythic", image: "./images/soulsociety/aizen.png", coinsPerSecond: 24, resale: 50},
 
   /*Naruto*/
   naruto: { name: "Naruto", series: "Naruto", pack: "landOfWaves", rarity: "Common", image: "./images/landofwaves/naruto.png", coinsPerSecond: 1.2, resale: 2},
@@ -93,6 +94,25 @@ const CARDS = {
   rocklee: { name: "Rock Lee", series: "Naruto", pack: "chunninexams", rarity: "Rare", image: "./images/chunninexams/rocklee.png", coinsPerSecond: 4, resale: 8},
   orochimaru: { name: "Orochimaru", series: "Naruto", pack: "chunninexams", rarity: "Epic", image: "./images/chunninexams/orochimaru.png", coinsPerSecond: 5, resale: 10},
   gaara: { name: "Gaara", series: "Naruto", pack: "chunninexams", rarity: "Legendary", image: "./images/chunninexams/gaara.png", coinsPerSecond: 8, resale: 15},
+
+  /*Search For Tsunade*/
+  shizune: { name: "Shizune", series: "Naruto", pack: "searchfortsunade", rarity: "Common", image: "./images/searchfortsunade/shizune.png", coinsPerSecond: 25, resale: 100},
+  kurenai: { name: "Kurenai", series: "Naruto", pack: "searchfortsunade", rarity: "Uncommon", image: "./images/searchfortsunade/kurenai.png", coinsPerSecond: 28, resale: 200},
+  asuma: { name: "Asuma", series: "Naruto", pack: "searchfortsunade", rarity: "Uncommon", image: "./images/searchfortsunade/asuma.png", coinsPerSecond: 29, resale: 200},
+  mightguy: { name: "Might Guy", series: "Naruto", pack: "searchfortsunade", rarity: "Rare", image: "./images/searchfortsunade/mightguy.png", coinsPerSecond: 30, resale: 250},
+  kisame: { name: "Kisame", series: "Naruto", pack: "searchfortsunade", rarity: "Epic", image: "./images/searchfortsunade/kisame.png", coinsPerSecond: 32, resale: 350},
+  itachi: { name: "Itachi", series: "Naruto", pack: "searchfortsunade", rarity: "Epic", image: "./images/searchfortsunade/itachi.png", coinsPerSecond: 35, resale: 350},
+  tsunade: { name: "Tsunade", series: "Naruto", pack: "searchfortsunade", rarity: "Legendary", image: "./images/searchfortsunade/tsunade.png", coinsPerSecond: 38, resale: 800},
+  jiraya: { name: "Jiraya", series: "Naruto", pack: "searchfortsunade", rarity: "Mythic", image: "./images/searchfortsunade/jiraya.png", coinsPerSecond: 42, resale: 1500},
+
+  /*Sasuke Retrieval*/
+  jirobo: { name: "Jirobo", series: "Naruto", pack: "sasukeretrieval", rarity: "Common", image: "./images/sasukeretrieval/jirobo.png", coinsPerSecond: 30, resale: 300},
+  sakonukon: { name: "Sakon & Ukon", series: "Naruto", pack: "sasukeretrieval", rarity: "Uncommon", image: "./images/sasukeretrieval/sakon&ukon.png", coinsPerSecond: 32, resale: 400},
+  kidomaru: { name: "Kidomaru", series: "Naruto", pack: "sasukeretrieval", rarity: "Rare", image: "./images/sasukeretrieval/kidomaru.png", coinsPerSecond: 34, resale: 500},
+  tayuya: { name: "Tayuya", series: "Naruto", pack: "sasukeretrieval", rarity: "Epic", image: "./images/sasukeretrieval/tayuya.png", coinsPerSecond: 38, resale: 700},
+  kimimaro: { name: "Kimimaro", series: "Naruto", pack: "sasukeretrieval", rarity: "Legendary", image: "./images/sasukeretrieval/kimimaro.png", coinsPerSecond: 42, resale: 850},
+  cursedmarksasuke: { name: "Cursed Mark Sasuke", series: "Naruto", pack: "sasukeretrieval", rarity: "Mythic", image: "./images/sasukeretrieval/cursedmarksasuke.png", coinsPerSecond: 45, resale: 1500},
+  kyubinaruto: { name: "Kyubi Naruto", series: "Naruto", pack: "sasukeretrieval", rarity: "Mythic", image: "./images/sasukeretrieval/kyubinaruto.png", coinsPerSecond: 50, resale: 2000},
 
   /*One Piece*/
   luffy: { name: "Luffy", series: "One Piece", pack: "romancedawn", rarity: "Common", image: "./images/romancedawn/luffy.png", coinsPerSecond: 1.5, resale: 1},
@@ -133,8 +153,8 @@ const CARDS = {
   zeff: { name: "Zeff", series: "One Piece", pack: "baratie", rarity: "Uncommon", image: "./images/baratie/zeff.png", coinsPerSecond: 14, resale: 25},
   ginop: { name: "Gin", series: "One Piece", pack: "baratie", rarity: "Rare", image: "./images/baratie/gin.png", coinsPerSecond: 15, resale: 40},
   donkrieg: { name: "Don Krieg", series: "One Piece", pack: "baratie", rarity: "Epic", image: "./images/baratie/donkrieg.png", coinsPerSecond: 18, resale: 55},
-  sanji: { name: "Sanji", series: "One Piece", pack: "baratie", rarity: "Legendary", image: "./images/baratie/sanji.png", coinsPerSecond: 20, resale: 200},
-  mihawk: { name: "Mihawk", series: "One Piece", pack: "baratie", rarity: "Mythic", image: "./images/baratie/mihawk.png", coinsPerSecond: 28, resale: 600},
+  sanji: { name: "Sanji", series: "One Piece", pack: "baratie", rarity: "Legendary", image: "./images/baratie/sanji.png", coinsPerSecond: 24, resale: 200},
+  mihawk: { name: "Mihawk", series: "One Piece", pack: "baratie", rarity: "Mythic", image: "./images/baratie/mihawk.png", coinsPerSecond: 25, resale: 600},
 
   /*Arlong Park*/
   genzo: { name: "Genzo", series: "One Piece", pack: "arlongpark", rarity: "Common", image: "./images/arlongpark/genzo.png", coinsPerSecond: 15, resale: 50},
@@ -143,7 +163,7 @@ const CARDS = {
   kuroobi: { name: "Kuroobi", series: "One Piece", pack: "arlongpark", rarity: "Uncommon", image: "./images/arlongpark/kuroobi.png", coinsPerSecond: 18, resale: 100},
   hatchi: { name: "Hatchi", series: "One Piece", pack: "arlongpark", rarity: "Rare", image: "./images/arlongpark/hatchi.png", coinsPerSecond: 20, resale: 200},
   bellemere: { name: "Belle Mere", series: "One Piece", pack: "arlongpark", rarity: "Epic", image: "./images/arlongpark/bellemere.png", coinsPerSecond: 22, resale: 250},
-  arlong: { name: "Arlong", series: "One Piece", pack: "arlongpark", rarity: "Legendary", image: "./images/arlongpark/arlong.png", coinsPerSecond: 25, resale: 500},
+  arlong: { name: "Arlong", series: "One Piece", pack: "arlongpark", rarity: "Legendary", image: "./images/arlongpark/arlong.png", coinsPerSecond: 28, resale: 500},
 
 
   /*Jujutsu Kaisen*/
@@ -190,9 +210,24 @@ const CARDS = {
   yuki: { name: "Yuki", series: "Jujutsu Kaisen", pack: "jujutsukaisen", rarity: "Legendary", image: "./images/jujutsukaisen/yuki.png", coinsPerSecond: 22, resale: 80},
   urame: { name: "Urame", series: "Jujutsu Kaisen", pack: "jujutsukaisen", rarity: "Legendary", image: "./images/jujutsukaisen/urame.png", coinsPerSecond: 22.5, resale: 80},
   kenjaku: { name: "Kenjaku", series: "Jujutsu Kaisen", pack: "jujutsukaisen", rarity: "Legendary", image: "./images/jujutsukaisen/kenjaku.png", coinsPerSecond: 23, resale: 80},
-  toji: { name: "Toji", series: "Jujutsu Kaisen", pack: "jujutsukaisen", rarity: "Mythic", image: "./images/jujutsukaisen/toji.png", coinsPerSecond: 30, resale: 750},
+  toji: { name: "Toji", series: "Jujutsu Kaisen", pack: "jujutsukaisen", rarity: "Mythic", image: "./images/jujutsukaisen/toji.png", coinsPerSecond: 32, resale: 750},
   sukuna: { name: "Sukuna", series: "Jujutsu Kaisen", pack: "jujutsukaisen", rarity: "Mythic", image: "./images/jujutsukaisen/sukuna.png", coinsPerSecond: 35, resale: 850},
   gojo: { name: "Gojo", series: "Jujutsu Kaisen", pack: "jujutsukaisen", rarity: "Mythic", image: "./images/jujutsukaisen/gojo.png", coinsPerSecond: 40, resale: 1000},
+
+
+  /*CyberPunk EdgeRunners*/
+  gloria: { name: "Gloria", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Common", image: "./images/cyberpunkedgerunners/gloria.png", coinsPerSecond: 32, resale: 350},
+  pilar: { name: "Pilar", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Common", image: "./images/cyberpunkedgerunners/pilar.png", coinsPerSecond: 34, resale: 350},
+  faraday: { name: "Faraday", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Uncommon", image: "./images/cyberpunkedgerunners/faraday.png", coinsPerSecond: 36, resale: 450},
+  falco: { name: "Falco", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Uncommon", image: "./images/cyberpunkedgerunners/falco.png", coinsPerSecond: 38, resale: 450},
+  dorio: { name: "Dorio", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Uncommon", image: "./images/cyberpunkedgerunners/dorio.png", coinsPerSecond: 40, resale: 450},
+  kiwi: { name: "Kiwi", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Rare", image: "./images/cyberpunkedgerunners/kiwi.png", coinsPerSecond: 42, resale: 550},
+  rebecca: { name: "Rebecca", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Epic", image: "./images/cyberpunkedgerunners/rebecca.png", coinsPerSecond: 44, resale: 700},
+  maine: { name: "Maine", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Epic", image: "./images/cyberpunkedgerunners/Maine.png", coinsPerSecond: 45, resale: 700},
+  adamsmasher: { name: "Adam Smasher", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Legendary", image: "./images/cyberpunkedgerunners/adamsmasher.png", coinsPerSecond: 48, resale: 800},
+  david: { name: "David", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Legendary", image: "./images/cyberpunkedgerunners/david.png", coinsPerSecond: 50, resale: 1000},
+  lucy: { name: "Lucy", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Mythic", image: "./images/cyberpunkedgerunners/lucy.png", coinsPerSecond: 60, resale: 2000},
+
 };
 
 /*PACK GROUPS*/
@@ -204,7 +239,9 @@ const PACK_GROUPS = {
   /*Naruto Packs*/
   "Naruto": {enableViewAll: true,image: "series/narutopack.png", packs:{
    landOfWaves: {name: "Land of Waves", price: 50, cardsPerPack: 2, series: "Naruto", image: "packs/landofwaves.png"},
-   chunninexams: {name: "Chunnin Exams", price: 250, cardsPerPack: 2, series: "Naruto", image: "packs/chunninexams.png"}}},
+   chunninexams: {name: "Chunnin Exams", price: 250, cardsPerPack: 3, series: "Naruto", image: "packs/chunninexams.png"},
+   searchfortsunade: {name: "Search For Tsunade", price: 1000, cardsPerPack: 2, series: "Naruto", image: "packs/searchfortsunade.png"},
+   sasukeretrieval: {name: "Sasuke Retrieval", price: 1500, cardsPerPack: 2, series: "Naruto", image: "packs/sasukeretrieval.png"}}},
    /*One Piece Packs*/
   "One Piece": {enableViewAll: true,image: "series/onepiecepack.png", packs:{
    romancedawn: {name: "Romance Dawn", price: 100, cardsPerPack: 2, series: "One Piece", image: "packs/romancedawn.png"},
@@ -215,31 +252,45 @@ const PACK_GROUPS = {
    /*Jujutsu Kaisen Packs*/
    "Jujutsu Kaisen": {enableViewAll: true,image: "series/jujutsukaisenpack.png", packs:{
    jujutsukaisen: {name: "Season 1+2", price: 1000, cardsPerPack: 5, series: "Jujutsu Kaisen", image: "packs/jjkseason1+2.png"}}},
+   /*CyberPunk EdgeRunners*/
+   "CyberPunk EdgeRunners": {enableViewAll: true,image: "series/cyberpunkedgerunnerspack.png", packs:{
+   cyberpunkedgerunners: {name: "EdgeRunners", price: 1600, cardsPerPack: 3, series: "CyberPunk EdgeRunners", image: "packs/edgerunners.png"}}},
 };
 
 /* PROGRESSION RULES */
 const PROGRESSION_RULES = {
   // Bleach starter
   agentofshinigami: {unlockedByDefault: true},
-  soulsociety: {unlockedByDefault: false, requires: {type: "packCompletion", packs: ["romancedawn", "landOfWaves"]}, lockText: "Complete Romance Dawn and Land Of Waves"},
+  soulsociety: {unlockedByDefault: false, requires: {type: "packCompletion", packs: ["syrupvillage"]}, lockText: "Complete Syrup Village"},
   
   // Naruto progression
   landOfWaves: {unlockedByDefault: false, requires: {type: "packCompletion", packs: ["agentofshinigami"]}, lockText: "Complete Agents Of Shinigami"},
-  chunninexams: {unlockedByDefault: false, requires: {type: "packCompletion", packs: ["landOfWaves"]}, lockText: "Complete Land of Waves"},
+  chunninexams: {unlockedByDefault: false, requires: {type: "packCompletion", packs: ["romancedawn"]}, lockText: "Complete Romance Dawn"},
+  searchfortsunade: {unlockedByDefault: false, requires: {type: "packCompletion", packs: ["jujutsukaisen"]}, lockText: "Complete Jujutsu Kaisen Season 1+2"},
+  sasukeretrieval: {unlockedByDefault: false, requires: {type: "packCompletion", packs: ["searchfortsunade"]}, lockText: "Complete Search For Tsunade"},
 
   // One Piece progression
   romancedawn: {unlockedByDefault: false, requires: {type: "packCompletion", packs: ["landOfWaves"]}, lockText: "Complete Land Of Waves"},
-  orangetown: {unlockedByDefault: false, requires: {type: "packCompletion", packs: ["romancedawn"]}, lockText: "Complete Romance Dawn"},
+  orangetown: {unlockedByDefault: false, requires: {type: "packCompletion", packs: ["chunninexams"]}, lockText: "Complete Chunnin Exams"},
   syrupvillage: {unlockedByDefault: false, requires: {type: "packCompletion", packs: ["orangetown"]}, lockText: "Complete Orange Town"},
-  baratie: {unlockedByDefault: false, requires: {type: "packCompletion", packs: ["syrupvillage"]}, lockText: "Complete Syrup Village"},
+  baratie: {unlockedByDefault: false, requires: {type: "packCompletion", packs: ["soulsociety"]}, lockText: "Complete Soul Society"},
   arlongpark: {unlockedByDefault: false, requires: {type: "packCompletion", packs: ["baratie"]}, lockText: "Complete Baratie"},
 
   // Jujutsu Kaisen progression
-  jujutsukaisen: {unlockedByDefault: false, requires: {type: "packCompletion", packs: ["soulsociety", "syrupvillage"]}, lockText: "Complete Soul Society and Syrup Village"}
+  jujutsukaisen: {unlockedByDefault: false, requires: {type: "packCompletion", packs: ["arlongpark"]}, lockText: "Complete Arlong Park"},
+
+  //CyberPunk EdgeRunners progression
+  cyberpunkedgerunners: {unlockedByDefault: false, requires: {type: "packCompletion", packs: ["sasukeretrieval"]}, lockText: "Complete Sasuke Retrieveal"}
 };
 
 /*Max Coins*/
 const MAX_COINS = 25000;
+
+const stats = {
+    packsOpened: 0,
+    coinsEarned: 0,
+    highestCoins: 25
+};
 
 //seriesCompletion
 //packCompletion
@@ -250,6 +301,7 @@ let ownedCards = {};
 let selectedCard = null;
 let activeSeries = null;
 let unlockedPacks = {};
+let shopFilter = "oldest";
 
 /*Pack Unlock Stuff*/
 function initializeUnlocks() {
@@ -332,9 +384,10 @@ function checkUnlocks() {
 function openGroupedPack(seriesName, packKey) {
   const pack = PACK_GROUPS[seriesName].packs[packKey];
   if (coins < pack.price) return alert("Not enough coins");
-
   coins -= pack.price;
   updateCoins();
+
+  stats.packsOpened++;
 
   const pulls = [];
 
@@ -344,6 +397,9 @@ function openGroupedPack(seriesName, packKey) {
 
     if (ownedCards[card.id]) {
       addCoins(card.resale);
+      stats.coinsEarned += card.resale;
+    if(coins > stats.highestCoins){
+    stats.highestCoins = coins;}
       pulls.push({ ...card, sold: true });
     } else {
       ownedCards[card.id] = card;
@@ -382,25 +438,42 @@ function showPullResults(pulls) {
   modal.style.display = "flex";
 }
 
+function changeShopFilter() {
+    shopFilter = document.getElementById("filterSelect").value;
+    renderShop();
+}
+
 /*SHOP*/
 function renderShop() {
-  const container = document.getElementById("shopList");
-  container.innerHTML = "";
+    const container = document.getElementById("shopList");
+    container.innerHTML = "";
+    let entries = Object.entries(PACK_GROUPS);
+    switch(shopFilter){
+        case "newest":
+            entries.reverse();
+            break;
+        case "az":
+            entries.sort((a,b)=>a[0].localeCompare(b[0]));
+            break;
+        case "za":
+            entries.sort((a,b)=>b[0].localeCompare(a[0]));
+            break;
+    }
+    entries.forEach(([seriesName, group]) => {
+        const div = document.createElement("div");
+        div.className = "pack";
+        div.innerHTML = `
+            <div>
+                <h3>${seriesName}</h3>
+                <p>${Object.keys(group.packs).length} Packs</p>
+            </div>
 
-  Object.entries(PACK_GROUPS).forEach(([seriesName, group]) => {
-    const div = document.createElement("div");
-    div.className = "pack";
-    div.innerHTML = `
-      <div>
-        <h3>${seriesName}</h3>
-        <p>${Object.keys(group.packs).length} Packs</p>
-      </div>
-      <img src="${group.image}">
-      <button>View All</button>
-    `;
-    div.querySelector("button").onclick = () => renderShopSeries(seriesName);
-    container.appendChild(div);
-  });
+            <img src="${group.image}">
+            <button>View All</button>
+        `;
+        div.querySelector("button").onclick = () => renderShopSeries(seriesName);
+        container.appendChild(div);
+    });
 }
 
 function renderShopSeries(seriesName) {
@@ -542,10 +615,46 @@ function updateCoins() {
 function showMenu(id) {
   document.querySelectorAll(".menu").forEach(m => m.classList.add("hidden"));
   document.getElementById(id).classList.remove("hidden");
+  if(id === "stats"){
+    updateStats();
+  }
 }
 
 function closePullResults() {
   document.getElementById("pullResults").style.display = "none";
+}
+
+function updateStats(){
+    const cardsOwned = Object.keys(ownedCards).length;
+    let packsCompleted = 0;
+    let totalPacks = 0;
+
+    Object.entries(PACK_GROUPS).forEach(([seriesName, group]) => {
+        Object.entries(group.packs).forEach(([packKey]) => {
+
+            totalPacks++;
+
+            if(isPackComplete(packKey)){
+                packsCompleted++;}}
+              );
+            });
+    let seriesCompleted = 0;
+    Object.keys(PACK_GROUPS).forEach(seriesName => {
+        if(isSeriesComplete(seriesName)){
+            seriesCompleted++;
+        }
+    });
+    document.getElementById("statCardsOwned").textContent = cardsOwned;
+    document.getElementById("statPacksOpened").textContent =
+        stats.packsOpened;
+    document.getElementById("statPacksCompleted").textContent =
+        `${packsCompleted}/${totalPacks}`;
+    document.getElementById("statSeriesCompleted").textContent =
+        `${seriesCompleted}/${Object.keys(PACK_GROUPS).length}`;
+    document.getElementById("statCoinsEarned").textContent =
+        Math.round(stats.coinsEarned * 10) / 10;
+    document.getElementById("statHighestCoins").textContent =
+        Math.round(stats.highestCoins * 10) / 10;
 }
 
 /*SAVE / LOAD / RESET*/
@@ -557,7 +666,8 @@ function exportSave() {
   ownedCards,
   selectedCard,
   activeSeries,
-  unlockedPacks
+  unlockedPacks,
+  stats
 };
 
   const dataStr = JSON.stringify(saveData, null, 2);
@@ -597,6 +707,9 @@ document.getElementById("importFile").addEventListener("change", function (event
 
       activeSeries = SERIES.some(s => s.name === data.activeSeries) ? data.activeSeries : null;
       unlockedPacks = { ...unlockedPacks, ...data.unlockedPacks };
+      stats.packsOpened = data.stats?.packsOpened ?? 0;
+      stats.coinsEarned = data.stats?.coinsEarned ?? 0;
+      stats.highestCoins = data.stats?.highestCoins ?? coins;
 
       initializeUnlocks();
       checkUnlocks();
@@ -625,6 +738,10 @@ function resetGame() {
   activeSeries = null;
   unlockedPacks = {};
 
+  stats.packsOpened = 0;
+  stats.coinsEarned = 0;
+  stats.highestCoins = 25;
+
   initializeUnlocks();
   updateCoins();
   renderCollection();
@@ -636,8 +753,11 @@ function startCoinGeneration() {
   setInterval(() => {
     if (selectedCard && coins < MAX_COINS) {
       addCoins(selectedCard.coinsPerSecond);
-    }
-  }, 1000); // every 1000ms = 1 second
+      stats.coinsEarned += selectedCard.coinsPerSecond;
+    updateStats();
+      if (coins > stats.highestCoins) {
+        stats.highestCoins = coins;}}
+  }, 1000);
 }
 
 // Start the coin generator

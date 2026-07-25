@@ -12,6 +12,7 @@
       <nav>
         <button onclick="showMenu('shop')">Shop</button>
         <button onclick="showMenu('collection')">Collection</button>
+        <button onclick="showMenu('stats')">Stats</button>
         <button onclick="showMenu('settings')">Settings</button>
       </nav>
     </header>
@@ -20,6 +21,13 @@
       <!-- SHOP -->
       <section id="shop" class="menu">
         <h2>Shop</h2>
+        <div id="shopFilter">
+    <label for="filterSelect">Filter:</label>
+    <select id="filterSelect" onchange="changeShopFilter()">
+    <option value="oldest">Oldest to Newest</option>
+    <option value="newest">Newest to Oldest</option>
+    <option value="az">A-Z</option>
+    <option value="za">Z-A</option></select></div>
         <div id="shopList"></div>
       </section>
 
@@ -29,6 +37,19 @@
         <p id="selectedInfo">Selected Card: None</p>
         <div id="seriesButtons"></div>
         <div id="cardGrid"></div>
+      </section>
+
+      <!-- STATS -->
+     <section id="stats" class="menu hidden">
+      <h2>Statistics</h2>
+       <div id="statsList">
+        <p>Cards Owned: <span id="statCardsOwned">0</span></p>
+        <p>Packs Opened: <span id="statPacksOpened">0</span></p>
+        <p>Packs Completed: <span id="statPacksCompleted">0</span></p>
+        <p>Series Completed: <span id="statSeriesCompleted">0</span></p>
+        <p>Coins Earned: <span id="statCoinsEarned">0</span></p>
+        <p>Highest Coin Balance: <span id="statHighestCoins">25</span></p>
+       </div>
       </section>
 
       <!-- SETTINGS -->
