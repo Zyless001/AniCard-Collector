@@ -1,64 +1,59 @@
-Update 2.0 (New UI + East Blue Saga Complete)
+Update 2.5 (Stats + CyberPunk EdgeRunners)
 
-+2 Packs
++3 Packs
 
-+14 Characters
++26 Characters
 
 ANIME INFO
 
-No new ones...
+"CyberPunk EdgeRunners"
 
 
 PACK INFO
 
-"Baratie" --- 7 Cards
+"Search For Tsunade" --- 8 Cards
 
-"Arlong Park" --- 7 Cards
+"Sasuke Retrevial" --- 7 Cards
+
+"EdgeRunners" --- 11 Cards
+
+
+PACK CHANGES
+
+"Chunnin Exams" - 'CPP' 2 > 3
 
 
 CHARACTER INFO
 
-One Piece - (4 Commons, 3 Uncommons, 2 Rares, 2 Epics, 2 Legendarys, and 1 Mythic)
+Naruto - (2 Commons, 3 Uncommons, 2 Rares, 3 Epics, 2 Legendarys, and 3 Mythics)
+
+CyberPunk EdgeRunners - (2 Commons, 3 Uncommons, 1 Rare, 2 Epics, 2 Legendarys, and 1 Mythic)
 
 
 CARD INFO
 
-"Toji" - 'Resale Change' 250 > 750
+"Aizen" - 'CPS' 25 > 24
 
-"Toji" - 'CPS' 28 > 30
+"Sanji" - 'CPS' 20 > 24
 
-"Sukuna" - 'Resale Change' 500 > 850
+"Mihawk" - 'CPS' 26 > 25
 
-"Sukuna" - 'CPS' 32 > 35
+"Arlong" - 'CPS' 25 > 28
+
+"Toji" - 'CPS' 30 > 32
+
 
 QOL (CARDS)
 
-"Rariety" - Common Chance 50% > 40%
+Unlock Conditions For Packs Changed
 
-"Rariety" - Rare Chance 15% > 18%
 
-"Rariety" - Epic Chance 8% > 12%
-
-"Rariety" - Legendary Chance 1.5% > 3%
-
-"Rariety" - Mythic Chance 0.5% > 2%
 
 QOL (UI)
 
-Added - New Max Coin - 25,000
+Added - Set Filter
 
-Added - New Ui Buttons
-
-Added - New Card Sizes
-
-Added - New Pack Sizes
-
-Added - New Colors For UI
-
-Added - New Button Animations
-
-Added - A lot more...
-
+Added - STATS!!!
 
 BUG FIXES
 
@@ -67,8 +62,7 @@ No Bugs That I Know Of...
 
 EXTRA INFO
 
-I had the urge to work on this again and decided to focus more on UI than packs. I think it was a good idea
-and the game looks really nice now. More packs will come in the future (maybe) along with new animes, 
-rarietys, etc. Hope you enjoy the new update :)
+The game is actually coming together. I have a lot of ideas on things to add, but idk when or how to add them yet.
+I am genuinly so proud of this game, so I hope you like it!
 
 Have Fun and God Bless
