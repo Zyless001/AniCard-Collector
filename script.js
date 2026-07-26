@@ -223,7 +223,7 @@ const CARDS = {
   dorio: { name: "Dorio", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Uncommon", image: "./images/cyberpunkedgerunners/dorio.png", coinsPerSecond: 40, resale: 450},
   kiwi: { name: "Kiwi", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Rare", image: "./images/cyberpunkedgerunners/kiwi.png", coinsPerSecond: 42, resale: 550},
   rebecca: { name: "Rebecca", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Epic", image: "./images/cyberpunkedgerunners/rebecca.png", coinsPerSecond: 44, resale: 700},
-  maine: { name: "Maine", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Epic", image: "./images/cyberpunkedgerunners/Maine.png", coinsPerSecond: 45, resale: 700},
+  maine: { name: "Maine", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Epic", image: "./images/cyberpunkedgerunners/maine.png", coinsPerSecond: 45, resale: 700},
   adamsmasher: { name: "Adam Smasher", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Legendary", image: "./images/cyberpunkedgerunners/adamsmasher.png", coinsPerSecond: 48, resale: 800},
   david: { name: "David", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Legendary", image: "./images/cyberpunkedgerunners/david.png", coinsPerSecond: 50, resale: 1000},
   lucy: { name: "Lucy", series: "CyberPunk EdgeRunners", pack: "cyberpunkedgerunners", rarity: "Mythic", image: "./images/cyberpunkedgerunners/lucy.png", coinsPerSecond: 60, resale: 2000},
